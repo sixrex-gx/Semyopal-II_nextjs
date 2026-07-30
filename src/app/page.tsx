@@ -29,7 +29,7 @@ const features = [
     title: 'Asrama Seminari',
     description: 'Fasilitas asrama yang nyaman dengan bimbingan formator untuk membentuk karakter disiplin, mandiri, dan bertanggung jawab.',
     icon: Building2,
-    href: '/fasilitas',
+    href: '/asrama-seminari',
     category: 'Fasilitas',
   },
   {
@@ -43,7 +43,7 @@ const features = [
     title: 'Lingkungan Asri & Nyaman',
     description: 'Kampus di Labuan Bajo dengan udara segar, pemandangan alam Flores yang indah, dan lingkungan yang kondusif untuk belajar.',
     icon: Shield,
-    href: '/fasilitas',
+    href: '/lingkungan-asri',
     category: 'Lingkungan',
   },
 ]
