@@ -112,9 +112,9 @@ export default function AkademikPage() {
 
           <div className="text-center mt-10 lg:mt-16">
             <Button asChild>
-              <a href="/ekstrakurikuler" className="inline-flex items-center justify-center px-6 py-3 text-button-label rounded-btn border-2 border-primary text-primary bg-transparent hover:bg-primary-lighter focus:ring-primary transition-all duration-tesla focus:outline-none focus:ring-2 focus:ring-offset-2 min-h-[44px]">
+              <Link href="/ekstrakurikuler" className="inline-flex items-center justify-center px-6 py-3 text-button-label rounded-btn border-2 border-primary text-primary bg-transparent hover:bg-primary-lighter focus:ring-primary transition-all duration-tesla focus:outline-none focus:ring-2 focus:ring-offset-2 min-h-[44px]">
                 Lihat Semua Ekstrakurikuler
-              </a>
+              </Link>
             </Button>
           </div>
         </div>
@@ -142,9 +142,9 @@ export default function AkademikPage() {
 
         <div className="text-center mt-10 lg:mt-16">
           <Button asChild>
-            <a href="/prestasi" className="inline-flex items-center justify-center px-6 py-3 text-button-label rounded-btn border-2 border-primary text-primary bg-transparent hover:bg-primary-lighter focus:ring-primary transition-all duration-tesla focus:outline-none focus:ring-2 focus:ring-offset-2 min-h-[44px]">
+            <Link href="/prestasi" className="inline-flex items-center justify-center px-6 py-3 text-button-label rounded-btn border-2 border-primary text-primary bg-transparent hover:bg-primary-lighter focus:ring-primary transition-all duration-tesla focus:outline-none focus:ring-2 focus:ring-offset-2 min-h-[44px]">
               Lihat Semua Prestasi
-            </a>
+            </Link>
           </Button>
         </div>
       </section>
@@ -159,14 +159,14 @@ export default function AkademikPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button asChild size="lg" variant="primary" className="w-full sm:w-auto min-w-[200px]">
-              <a href="/ppdb" className="inline-flex items-center justify-center w-full">
+              <Link href="/ppdb" className="inline-flex items-center justify-center w-full">
                 Daftar PPDB Online
-              </a>
+              </Link>
             </Button>
             <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto min-w-[200px]">
-              <a href="/kontak" className="inline-flex items-center justify-center w-full">
+              <Link href="/kontak" className="inline-flex items-center justify-center w-full">
                 Konsultasi Gratis
-              </a>
+              </Link>
             </Button>
           </div>
         </div>

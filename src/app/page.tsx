@@ -189,13 +189,13 @@ export default function HomePage() {
                   <p className="text-body-text text-neutral-pewter mb-4">
                     {achievement.description}
                   </p>
-                  <a
+                  <Link
                     href={achievement.href}
                     className="btn-ghost text-sub-link inline-flex items-center gap-1"
                   >
                     Baca Selengkapnya
                     <span aria-hidden="true">→</span>
-                  </a>
+                  </Link>
                 </div>
               </article>
             ))}
@@ -203,9 +203,9 @@ export default function HomePage() {
 
           <div className="text-center mt-10 lg:mt-16">
             <Button asChild>
-              <a href="/prestasi" className="inline-flex items-center justify-center px-6 py-3 text-button-label rounded-btn border-2 border-primary text-primary bg-transparent hover:bg-primary-lighter focus:ring-primary transition-all duration-tesla focus:outline-none focus:ring-2 focus:ring-offset-2 min-h-[44px]">
+              <Link href="/prestasi" className="inline-flex items-center justify-center px-6 py-3 text-button-label rounded-btn border-2 border-primary text-primary bg-transparent hover:bg-primary-lighter focus:ring-primary transition-all duration-tesla focus:outline-none focus:ring-2 focus:ring-offset-2 min-h-[44px]">
                 Lihat Semua Prestasi
-              </a>
+              </Link>
             </Button>
           </div>
         </div>
@@ -223,9 +223,9 @@ export default function HomePage() {
               </div>
               <div className="mt-4 md:mt-0">
                 <Button asChild>
-                  <a href="/berita" className="inline-flex items-center justify-center px-4 py-2 text-sm text-button-label rounded-btn text-neutral-graphite hover:text-primary hover:underline transition-all duration-tesla">
+                  <Link href="/berita" className="inline-flex items-center justify-center px-4 py-2 text-sm text-button-label rounded-btn text-neutral-graphite hover:text-primary hover:underline transition-all duration-tesla">
                     Lihat Semua Berita
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </header>
@@ -258,13 +258,13 @@ export default function HomePage() {
                     <p className="text-body-text text-neutral-pewter mb-3 line-clamp-2">
                       {item.description}
                     </p>
-                    <a
+                    <Link
                       href={item.href}
                       className="btn-ghost text-sub-link inline-flex items-center gap-1 self-start"
                     >
                       Baca Selengkapnya
                       <span aria-hidden="true">→</span>
-                    </a>
+                    </Link>
                   </div>
                 </article>
               ))}
@@ -278,9 +278,9 @@ export default function HomePage() {
                 Pendaftaran Peserta Didik Baru dibuka mulai 1 Agustus 2024. Kuota terbatas!
               </p>
               <Button asChild>
-                <a href="/ppdb" className="inline-flex items-center justify-center w-full px-6 py-3 text-button-label rounded-btn bg-neutral-white text-primary hover:bg-neutral-lightAsh focus:ring-neutral-pewter focus:ring-2 focus:ring-offset-2 focus:ring-offset-primary transition-all duration-tesla min-h-[44px]">
+                <Link href="/ppdb" className="inline-flex items-center justify-center w-full px-6 py-3 text-button-label rounded-btn bg-neutral-white text-primary hover:bg-neutral-lightAsh focus:ring-neutral-pewter focus:ring-2 focus:ring-offset-2 focus:ring-offset-primary transition-all duration-tesla min-h-[44px]">
                   Daftar Sekarang
-                </a>
+                </Link>
               </Button>
             </div>
 
@@ -307,9 +307,9 @@ export default function HomePage() {
                 ))}
               </div>
               <Button asChild className="mt-4 w-full">
-                <a href="/kalender-akademik" className="inline-flex items-center justify-center w-full px-4 py-2 text-sm text-button-label rounded-btn text-neutral-graphite hover:text-primary hover:underline transition-all duration-tesla">
+                <Link href="/kalender-akademik" className="inline-flex items-center justify-center w-full px-4 py-2 text-sm text-button-label rounded-btn text-neutral-graphite hover:text-primary hover:underline transition-all duration-tesla">
                   Lihat Kalender Lengkap
-                </a>
+                </Link>
               </Button>
             </div>
 
@@ -346,14 +346,14 @@ export default function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button asChild size="lg" variant="primary" className="w-full sm:w-auto min-w-[200px]">
-              <a href="/ppdb" className="inline-flex items-center justify-center w-full">
+              <Link href="/ppdb" className="inline-flex items-center justify-center w-full">
                 Daftar PPDB Online
-              </a>
+              </Link>
             </Button>
             <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto min-w-[200px]">
-              <a href="/kontak" className="inline-flex items-center justify-center w-full">
+              <Link href="/kontak" className="inline-flex items-center justify-center w-full">
                 Hubungi Kami
-              </a>
+              </Link>
             </Button>
           </div>
         </div>

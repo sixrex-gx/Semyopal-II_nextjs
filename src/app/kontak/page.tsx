@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
 import { cn } from '@/lib/utils'
 import Hero from '@/components/ui/Hero'
@@ -255,7 +256,7 @@ export default function KontakPage() {
                     className="mt-1 w-4 h-4 text-primary border-neutral-paleSilver rounded focus:ring-2 focus:ring-primary focus:ring-offset-2"
                   />
                   <label htmlFor="privacy" className="text-sm text-neutral-pewter cursor-pointer">
-                    Saya menyetujui <a href="/kebijakan-privasi" className="text-primary hover:underline">Kebijakan Privasi</a> dan <a href="/syarat-ketentuan" className="text-primary hover:underline">Syarat & Ketentuan</a> pengumpulan data pribadi.
+                    Saya menyetujui <Link href="/kebijakan-privasi" className="text-primary hover:underline">Kebijakan Privasi</Link> dan <Link href="/syarat-ketentuan" className="text-primary hover:underline">Syarat & Ketentuan</Link> pengumpulan data pribadi.
                   </label>
                 </div>
 
@@ -320,18 +321,18 @@ export default function KontakPage() {
           </header>
           <div className="aspect-video rounded-xl overflow-hidden border border-neutral-cloudGray">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.123456789!2d119.89!3d-8.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMjknNTQuOTYiUyAxMTnCsDUzJzI0LjM2IkU!5e0!3m2!1sid!2sid!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5!2d119.89!3d-8.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMzAnMDAuMCJTIDExOcKwNTMnMjQuMCJF!5e0!3m2!1sid!2sid!4v1700000000000"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
-              title="Lokasi SEMYOPAL II di Google Maps"
+              title="Lokasi SEMYOPAL II di Google Maps - Labuan Bajo"
             ></iframe>
           </div>
           <div className="mt-6 text-center">
             <Button asChild variant="outline" size="md" className="w-full sm:w-auto">
-              <a href="https://maps.google.com" className="inline-flex items-center justify-center w-full">
+              <a href="https://www.google.com/maps/search/Labuan+Bajo+Manggarai+Barat" className="inline-flex items-center justify-center w-full" target="_blank" rel="noopener noreferrer">
                 Buka di Google Maps
               </a>
             </Button>

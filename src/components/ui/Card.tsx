@@ -1,6 +1,7 @@
 import { ReactNode } from 'react'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
+import Link from 'next/link'
 
 interface CardProps {
   children: ReactNode
@@ -120,15 +121,25 @@ interface CardLinkProps {
 }
 
 export function CardLink({ children, href, className, external = false }: CardLinkProps) {
+  if (external) {
+    return (
+      <a
+        href={href}
+        className={cn('btn-ghost text-sub-link', className)}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {children}
+      </a>
+    )
+  }
   return (
-    <a
+    <Link
       href={href}
       className={cn('btn-ghost text-sub-link', className)}
-      target={external ? '_blank' : undefined}
-      rel={external ? 'noopener noreferrer' : undefined}
     >
       {children}
-    </a>
+    </Link>
   )
 }
 

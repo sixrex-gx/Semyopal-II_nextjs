@@ -142,7 +142,7 @@ export default function PPDBPage() {
         backgroundImage="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1920&h=1080&fit=crop"
         backgroundAlt="Kampus SEMYOPAL II Labuan Bajo"
         primaryAction={{ label: 'Daftar Sekarang', href: '#daftar' }}
-        secondaryAction={{ label: 'Download Brosur', href: '/brosur-ppdb.pdf' }}
+        secondaryAction={{ label: 'Lihat Informasi PPDB', href: '#jalur' }}
       />
 
       <section className="section-container py-16 lg:py-24" aria-labelledby="jalur-title">
@@ -421,8 +421,8 @@ export default function PPDBPage() {
                   className="mt-1 w-4 h-4 text-primary border-neutral-paleSilver rounded focus:ring-2 focus:ring-primary focus:ring-offset-2"
                 />
                 <span className="text-sm text-neutral-pewter">
-                  Saya menyetujui <a href="/syarat-ketentuan" className="text-primary hover:underline">Syarat & Ketentuan</a> 
-                  dan <a href="/kebijakan-privasi" className="text-primary hover:underline">Kebijakan Privasi</a>, 
+                  Saya menyetujui <Link href="/syarat-ketentuan" className="text-primary hover:underline">Syarat & Ketentuan</Link> 
+                  dan <Link href="/kebijakan-privasi" className="text-primary hover:underline">Kebijakan Privasi</Link>, 
                   serta menyatakan data yang diisi benar dan valid.
                 </span>
               </label>
@@ -518,13 +518,13 @@ export default function PPDBPage() {
               <span className="text-xs font-medium text-primary mb-2 block">{item.category}</span>
               <h3 className="font-display text-product-name font-medium text-neutral-carbonDark mb-2">{item.title}</h3>
               <p className="text-body-text text-neutral-pewter mb-4">{item.desc}</p>
-              <a
+              <Link
                 href={item.href}
                 className="btn-ghost text-sub-link inline-flex items-center gap-1"
               >
                 Selengkapnya
                 <ArrowRight className="w-4 h-4" aria-hidden="true" />
-              </a>
+              </Link>
             </article>
           ))}
         </div>
@@ -567,7 +567,7 @@ export default function PPDBPage() {
 
           <div className="text-center mt-10 lg:mt-16">
             <Button asChild variant="outline" size="md">
-              <a href="/ekstrakurikuler">Lihat Semua Ekstrakurikuler</a>
+              <Link href="/ekstrakurikuler">Lihat Semua Ekstrakurikuler</Link>
             </Button>
           </div>
         </div>

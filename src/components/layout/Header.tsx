@@ -9,6 +9,7 @@ const navItems = [
   { href: '/', label: 'Beranda' },
   { href: '/tentang', label: 'Tentang' },
   { href: '/akademik', label: 'Akademik' },
+  { href: '/guru-staf', label: 'Guru & Staf' },
   { href: '/ppdb', label: 'PPDB' },
   { href: '/berita', label: 'Berita' },
   { href: '/kontak', label: 'Kontak' },
@@ -17,7 +18,7 @@ const navItems = [
 const quickLinks = [
   { href: '/ppdb', label: 'Pendaftaran', icon: BookOpen },
   { href: '/prestasi', label: 'Prestasi', icon: Award },
-  { href: '/guru', label: 'Guru & Staf', icon: Users },
+  { href: '/guru-staf', label: 'Guru & Staf', icon: Users },
   { href: '/galeri', label: 'Galeri', icon: Globe },
 ]
 
@@ -98,7 +99,7 @@ export default function Header() {
         <div
           id="mobile-menu"
           className={`lg:hidden overflow-hidden transition-all duration-tesla ease-tesla ${
-            isMobileMenuOpen ? 'max-h-96 opacity-100 pb-6' : 'max-h-0 opacity-0'
+            isMobileMenuOpen ? 'max-h-[32rem] opacity-100 pb-6' : 'max-h-0 opacity-0'
           }`}
           role="navigation"
           aria-label="Menu mobile"
@@ -112,6 +113,21 @@ export default function Header() {
                            hover:bg-neutral-lightAsh hover:text-primary transition-all duration-tesla"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
+                {item.label}
+              </Link>
+            ))}
+            <div className="px-4 pt-2 pb-1">
+              <p className="text-xs font-medium text-neutral-silverFog uppercase tracking-wider">Akses Cepat</p>
+            </div>
+            {quickLinks.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="flex items-center gap-3 px-4 py-2.5 text-sm text-neutral-graphite rounded-btn
+                           hover:bg-neutral-lightAsh hover:text-primary transition-all duration-tesla"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <item.icon className="w-4 h-4 text-primary" aria-hidden="true" />
                 {item.label}
               </Link>
             ))}

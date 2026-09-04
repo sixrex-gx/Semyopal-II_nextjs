@@ -85,7 +85,7 @@ export default function Hero({
                   variant="primary"
                   className="w-full sm:w-auto min-w-[200px]"
                 >
-                  <a href={primaryAction.href}>{primaryAction.label}</a>
+                  <Link href={primaryAction.href}>{primaryAction.label}</Link>
                 </Button>
               )}
               {secondaryAction && (
@@ -95,7 +95,7 @@ export default function Hero({
                   variant="secondary"
                   className="w-full sm:w-auto min-w-[200px]"
                 >
-                  <a href={secondaryAction.href}>{secondaryAction.label}</a>
+                  <Link href={secondaryAction.href}>{secondaryAction.label}</Link>
                 </Button>
               )}
             </div>

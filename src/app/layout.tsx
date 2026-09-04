@@ -1,7 +1,10 @@
 import type { Metadata, Viewport } from 'next'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/ui/Footer'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
@@ -21,27 +24,15 @@ export const metadata: Metadata = {
     siteName: 'SEMYOPAL II',
     title: 'SEMYOPAL II - SMAK Seminari St. Yohanes Paulus II Labuan Bajo',
     description: 'Seminari Menengah Katolik unggulan di Labuan Bajo, NTT dengan kurikulum merdeka dan pembinaan iman.',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'SEMYOPAL II - Kampus Seminari',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'SEMYOPAL II - SMAK Seminari St. Yohanes Paulus II Labuan Bajo',
     description: 'Seminari Menengah Katolik unggulan di Labuan Bajo dengan kurikulum merdeka dan pembinaan iman.',
-    images: ['/og-image.jpg'],
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    icon: '/logo_SMAK.png',
   },
-  manifest: '/site.webmanifest',
 }
 
 export const viewport: Viewport = {
@@ -59,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="id">
 
-      <body className="min-h-screen bg-neutral-white font-text text-neutral-graphite antialiased">
+      <body className={`min-h-screen bg-neutral-white font-text text-neutral-graphite antialiased ${inter.className}`}>
         <Header />
         <main id="main-content" role="main">
           {children}
